@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Covid-19 County Case Counts</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="title">
+        Covid-19 Cases by County <br> 
+        <div id = "subtitle">
+        Data Sources:
+        <a href = "https://github.com/nytimes/covid-19-data/blob/43d32dde2f87bd4dafbb7d23f5d9e878124018b8/live/us-counties.csv">New York Times, </a>
+        <a href = "https://data.census.gov/table/ACSDP5Y2018.DP05?g=0100000US$050000&d=ACS+5-Year+Estimates+Data+Profiles&hidePreview=true">US Census Bureau, </a>
+        <a href = "https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html">County Boundaries</a>
+        </div>
+    </div>
+    <div id="map"></div>
+    <div id="legend">hello</div>
+    <div id="text-description">
+        <b>Hover over a County!</b>
+    </div>
+    <div id="summary"><b>Map Description:</b> <br>
+        This map displays the number of Covid-19 cases in US counties in 2020. <br>The size and color of each circle relates to number of cases. The larger and darker color the circle is, the more cases.
+    </div>
+    <script src = "js/map2.js"></script>
+</body>
+
+</html>
